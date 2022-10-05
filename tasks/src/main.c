@@ -16,7 +16,19 @@ void task1_exec(void *pvParameters)
   vTaskDelete(NULL);
 }
 
+#define STACK_SIZE 4096
+
 void app_main() 
 {
+  // Буфер под служебные данные задачи
+  static StaticTask_t xTaskBuffer;
+  // Буфер под стек задачи
+  static StackType_t xStack[STACK_SIZE];
 
+  // Запуск задачи с статическим выделением памяти
+  TaskHandle_t xHandle = xTaskCreateStaticPinnedToCore(task1_exec, "task1", STACK_SIZE, NULL, 5, xStack, &xTaskBuffer, 1);
+  // Проверим, создалась ли задача
+  if (xHandle == NULL) {
+    ESP_LOGE("TASK1", "Failed to task create");
+  };
 }
