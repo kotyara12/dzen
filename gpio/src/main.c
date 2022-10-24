@@ -9,6 +9,7 @@
 void led_exec(void *pvParameters)
 {
   // Настраиваем вывод GPIO_NUM_12 на выход без подтяжки
+  gpio_pad_select_gpio(12);
   gpio_set_direction(GPIO_NUM_12, GPIO_MODE_OUTPUT);
   gpio_set_pull_mode(GPIO_NUM_12, GPIO_FLOATING);
 
