@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/PlatformIO/libs/**",
+                "${env:USERPROFILE}/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/**",
+                "${env:USERPROFILE}/.platformio/packages/toolchain-xtensa32/xtensa-esp32-elf/**",
+                "${env:USERPROFILE}/.platformio/packages/framework-espidf/components/**",
+                "${env:USERPROFILE}/.platformio/packages/toolchain-xtensa-esp32/lib/gcc/xtensa-esp32-elf/**",
+                "${env:USERPROFILE}/.platformio/packages/toolchain-xtensa32/lib/gcc/xtensa-esp32-elf/**",
+                "${env:USERPROFILE}/.platformio/packages/framework-espidf/components/driver/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64",
+            "compileCommands": "${workspaceFolder}/.pio/build/esp32dev/compile_commands.json"
+        }
+    ],
+    "version": 4
+}
