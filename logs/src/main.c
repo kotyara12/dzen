@@ -10,19 +10,30 @@
 void logs_exec(void *pvParameters)
 {
   while(1) {
-    ESP_LOGE("TASK", "Error %d", 500);
+    // Информация
+    ESP_LOGI("TASK", "Information");
     vTaskDelay(pdMS_TO_TICKS(1000));
 
-    ESP_LOGI("TASK", "Info");
+    // Ошибка с выводом ее кода
+    ESP_LOGE("TASK", "Error # %d", 500);
+    vTaskDelay(pdMS_TO_TICKS(1000));
+
+    // Предупреждение с выводом шестнадцатеричного целого числа
+    ESP_LOGW("TASK", "Warning: %04X", 45511);
+    vTaskDelay(pdMS_TO_TICKS(1000));
+
+    // Отладка
+    ESP_LOGD("TASK", "Debug");
     vTaskDelay(pdMS_TO_TICKS(1000));
   };
+
   vTaskDelete(NULL);
 }
 
 void app_main() 
 {
   // Программное изменение уровеня детализации журнала
-  esp_log_level_set("*", ESP_LOG_ERROR);        // Для всех модулей: только ошибки
+  esp_log_level_set("*", ESP_LOG_DEBUG);        // Для всех модулей: отладка
   esp_log_level_set("wifi", ESP_LOG_WARN);      // Только для WiFi: ошибки и предупреждения
   esp_log_level_set("dhcpc", ESP_LOG_INFO);     // Только для DHCP: ошибки, предупреждения и информация
 
