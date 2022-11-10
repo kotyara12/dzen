@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "task.h": "c",
+    "esp_log.h": "c",
+    "esp_timer.h": "c"
+  }
+}
