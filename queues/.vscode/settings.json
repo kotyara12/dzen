@@ -2,6 +2,8 @@
   "files.associations": {
     "gpio.h": "c",
     "esp_log.h": "c",
-    "gpio_sig_map.h": "c"
+    "gpio_sig_map.h": "c",
+    "stdint.h": "c",
+    "queue.h": "c"
   }
 }
