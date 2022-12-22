@@ -1,0 +1,20 @@
+{
+  "files.associations": {
+    "esp_log.h": "c",
+    "time.h": "c",
+    "*.ipp": "c",
+    "*.inc": "c",
+    "*.tcc": "c",
+    "chrono": "c",
+    "future": "c",
+    "iomanip": "c",
+    "limits": "c",
+    "numeric": "c",
+    "ratio": "c",
+    "streambuf": "c",
+    "tuple": "c",
+    "type_traits": "c",
+    "utility": "c",
+    "cmath": "c"
+  }
+}
