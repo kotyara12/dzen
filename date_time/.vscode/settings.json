@@ -15,6 +15,9 @@
     "tuple": "c",
     "type_traits": "c",
     "utility": "c",
-    "cmath": "c"
+    "cmath": "c",
+    "sntp.h": "c",
+    "esp_sntp.h": "c",
+    "esp_timer.h": "c"
   }
 }
