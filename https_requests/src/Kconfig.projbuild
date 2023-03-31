@@ -1,0 +1,21 @@
+menu "HTTPS requests"
+
+    config CONFIG_HTTP_SSL_ENABLED
+        bool "Enable https"
+        default y
+        help
+            This option will enable https protocol by linking esp-tls library and initializing SSL transport
+
+    config CONFIG_HTTP_SSL_GLOBAL_STORE
+        bool "Enable certificates global storage"
+        default n
+        help
+            This option will enable certificates global storage
+
+    config CONFIG_HTTP_REUSE_CONNECTION
+        bool "Use a persistent HTTP connection"
+        default n
+        help
+            Use a persistent HTTP connection
+
+endmenu
