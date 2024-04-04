@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "esp_random.h": "c",
+    "queue.h": "c"
+  },
+  "C_Cpp.errorSquiggles": "disabled"
+}

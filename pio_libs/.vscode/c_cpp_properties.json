@@ -4,7 +4,7 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:/PlatformIO/libs/**",
+                "C:/Projects/PlatformIO/libs/**",
                 "${env:USERPROFILE}/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/**",
                 "${env:USERPROFILE}/.platformio/packages/toolchain-xtensa32/xtensa-esp32-elf/**",
                 "${env:USERPROFILE}/.platformio/packages/framework-espidf/components/**",
