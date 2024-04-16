@@ -1,0 +1,10 @@
+{
+  "files.associations": {
+    "esp_random.h": "c",
+    "queue.h": "c",
+    "mbcontroller.h": "c",
+    "esp_modbus_slave.h": "c",
+    "esp_modbus_master.h": "c"
+  },
+  "C_Cpp.errorSquiggles": "disabled"
+}
