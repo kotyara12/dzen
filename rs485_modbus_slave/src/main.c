@@ -37,6 +37,7 @@ void app_main()
   // Настраиваем Modbus
   mb_communication_info_t comm;
   memset(&comm, 0, sizeof(comm));
+  comm.slave_addr = 1;                // Адрес устройства
   comm.mode = MB_MODE_RTU;            // Режим Modbus RTU
   comm.port = UART_NUM_1;             // Порт UART1
   comm.baudrate = 9600;               // Скорость 9600
