@@ -1,0 +1,1 @@
+Пример для статьи (Новое API I2C для ESP-IDF 5.2.0 и выше)[https://kotyara12.ru/iot/esp32_i2c_new/]
