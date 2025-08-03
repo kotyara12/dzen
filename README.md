@@ -1,2 +1,3 @@
 # dzen
-Примеры исходного кода к статьям на канале dzen.ru/kotyara12
+
+Примеры исходного кода к статьям на сайте https://kotyara12.ru и канале https://dzen.ru/kotyara12
